@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>TCM MainWindow </string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../Downloads/cargrey_7247.ico</normaloff>../../../../Downloads/cargrey_7247.ico</iconset>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>1</horstretch>
+      <verstretch>1</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="connection_tab">
+     <attribute name="title">
+      <string>Connections</string>
+     </attribute>
+     <widget class="QListView" name="listView">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>361</width>
+        <height>521</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuApplication">
+    <property name="title">
+     <string>Application</string>
+    </property>
+    <addaction name="actionClose"/>
+   </widget>
+   <widget class="QMenu" name="menuConnection">
+    <property name="title">
+     <string>Connection</string>
+    </property>
+    <widget class="QMenu" name="menuDealers">
+     <property name="title">
+      <string>Dealers</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="actionPobedaauto_ru"/>
+    </widget>
+    <widget class="QMenu" name="menuMarketplaces">
+     <property name="title">
+      <string>Marketplaces</string>
+     </property>
+     <addaction name="actionAm_ru"/>
+    </widget>
+    <addaction name="menuDealers"/>
+    <addaction name="menuMarketplaces"/>
+   </widget>
+   <widget class="QMenu" name="menuDatabase">
+    <property name="title">
+     <string>Database</string>
+    </property>
+    <addaction name="actionLoad_car_data"/>
+    <addaction name="actionSet_database"/>
+   </widget>
+   <addaction name="menuApplication"/>
+   <addaction name="menuConnection"/>
+   <addaction name="menuDatabase"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionLoad_car_data">
+   <property name="text">
+    <string>Set datasource</string>
+   </property>
+  </action>
+  <action name="actionPobedaauto_ru">
+   <property name="text">
+    <string>pobeda-auto.ru</string>
+   </property>
+  </action>
+  <action name="actionAm_ru">
+   <property name="text">
+    <string>am.ru</string>
+   </property>
+  </action>
+  <action name="actionSet_database">
+   <property name="text">
+    <string>Set database</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
