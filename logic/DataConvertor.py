@@ -1,8 +1,11 @@
 ﻿import numpy as np
-from Definitions import *
+
+from logic.Definitions import *
+
 
 class DataConvertor(object):
-    """This class is responsible for converting data
+    """
+    This class is responsible for converting data;
     also allows to save and print data.
     """
     data = None

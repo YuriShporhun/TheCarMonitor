@@ -1,5 +1,4 @@
-import numpy as np
-from ComputeCost import *
+from ml.ComputeCost import *
 
 def GradientDescent(X, Y, alpha, num_iters):
     ones_string = '1 ;' * X.shape[0]

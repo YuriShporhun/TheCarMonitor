@@ -11,8 +11,10 @@ class Parser(object):
         self.page_url = url
 
     def parse_auto(self):
-        result = {'year':[], 'price':[], 'mileage': [], 'condition': [], 'bodytype': [], 'fueltype' :[], \
-            'litre' : [], 'gearboxtype' : [], 'gearing' : []}
+        result = {
+            'year': [], 'price': [], 'mileage': [], 'condition': [], 'bodytype': [], 'fueltype': [],
+            'litre': [], 'gearboxtype': [], 'gearing': []
+        }
 
         current_page = 1
         link_obtained = True
@@ -48,11 +50,11 @@ class Parser(object):
                         condition = damaged_info[0].text
                     else:
                         condition = info_top[1].strip()
-                        #Sometimes the status field includes extra comma
+                        # Sometimes the status field includes extra comma
                         if condition[len(condition) - 1] == ',':
                             condition = condition[:len(condition) - 1]
 
-                #info_bottom contains body type, gearing, et cetera
+                # info_bottom contains body type, gearing, etc
                 info_bottom = car_info[1].text.split(', ')
                 if len(info_bottom) < 5:
                     continue
